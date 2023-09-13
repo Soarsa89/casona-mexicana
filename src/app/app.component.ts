@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { UntypedFormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { FormBuilder } from '@angular/forms';
 export class AppComponent {
   title = 'La Casona Mexicana';
 
-  constructor(private formBuilder: FormBuilder,private http: HttpClient){}
+  constructor(private formBuilder: UntypedFormBuilder,private http: HttpClient){}
   ngOnInit():void{
     
   }
